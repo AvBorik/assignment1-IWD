@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>QueenstownNZ-Newsletters</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="..//images/favicon/favicon-facebook_normal.png" />
+<link rel="stylesheet" type="text/css" href="..//assets/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="..//assets/css/style.css">
+<!--[if lt IE 9]>
+<script src="assets/js/html5shiv.min.js"></script>
+<script src="assets/js/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<div class="container">
+  <header id="header">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="header">
+          <div class="logo_area"><a href="..//index.html" class="logo"><img src="..//images/logo/QueenstownLogo.jpg" alt=""></a></div>
+          <div class="banner"><a href="..//index.html"><img src="..//images/logo/QueenstownBanner.jpeg" alt=""></a></div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section id="navArea">
+    <nav class="navbar navbar-inverse" role="navigation">
+       <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav main_nav">
+          <li><a href="..//index.html">Home<span class="mobile-show"></span></a></li>
+          <li><a href="placeToVisit.html">PLACE TO VISIT&#38;DINE</a></li>
+          <li><a href="accomodation.html">ACCOMODATION</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
+          <li class="active"><a href="newsletters.html">NEWSLETTER</a></li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+  <section class="newsletters text-center"> 
+  <h2 class="titleH2">Newsletters subscription</h2>
+  <hr>   
+       <div class="col-lg-4">
+        </div>
+        <div class="col-lg-4">
+        <!-- create form and text fields on it, with check box and button -->
+    	<form method="post" >
+        	<div class="form-group">
+                <label for="name">Name: </label>
+                 <input type="text" id="name" class="form-control" placeholder="Pleace enter your first name"><br/>
+            </div> 
+            <!-- p tag to print error message or if it is empty, hide this element --> 
+            <p id="errorName">
+            </p>
+            <div class="form-group">
+                <label for="surname">Surname: </label><input type="text" id="surname" class="form-control" placeholder="Please enter your second name"><br/>
+			</div>   
+            <p id="errorSurmame">
+            </p>
+            <div class="form-group">
+                <label for="email" >Email: </label>              
+                <input type="email" id="email" class="form-control" placeholder="Pleace enter your email address"><br/>
+            </div>   
+            <p id="errorEmail">
+            </p>
+  			<div class="checkbox">
+            	<label>
+                 <input type="checkbox" id="agree"> I agree to Terms of Service<br>
+                 </label>
+                 </div>   
+            <p id="errorAgriment">
+            </p>
+            <div class="form-group">
+               <!-- button has function event to validate all fields -->
+                <input type="button" value ="Subscribe" class="btn btn-danger btn-lg" onClick="dataValidation()"> 
+            </div>    
+        </form>
+	  </div>
+  </section>
+  <footer id="footer">
+  <hr>
+   <br>
+    <div class="footer ">
+      <p class="copyright">Copyright &copy; 2017 <a href="https://www.queenstownnz.co.nz/" target="new">Queenstown</a></p>
+      <p class="developer">Developed By <a href="http://avborik.esy.es/" target="new">Boris Avdeev</a></p>
+    </div>
+  </footer>
+</div>
+<!-- link custom JavaScript file -->
+<script src="..//assets/js/jquery.min.js"></script> 
+<script src="..//assets/js/bootstrap.min.js"></script>
+<script src="..//assets/js/custom.js"></script> 
+
+</body>
+</html>
