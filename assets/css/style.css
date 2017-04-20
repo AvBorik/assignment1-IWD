@@ -1,0 +1,364 @@
+@charset "utf-8";
+/*CSS Document*/
+/*Main part*/
+body{
+	background:#68a7ee;
+	font-size: 18px;
+}
+/*Menu settings (navigation)*/
+ul{
+	padding:0; 
+	margin:0; 
+	list-style:none
+}
+/*Links settings for each pages, colour and decoration effects*/
+a{	text-decoration:none; 
+	color:#2f2f2f
+}
+a:hover{
+	color:#646464; 
+	text-decoration:none
+}
+a:focus{
+	outline:none; 
+	text-decoration:none
+}
+/*Title settings, fonts type, sizes*/
+h1, h2, h3, h4, h5, h6{
+	font-family:'Oswald',sans-serif
+}
+h2{
+	line-height:23px;
+	text-align: center;
+	padding-bottom: 10px
+}
+.title{
+	text-align: center;
+}
+/*Pictures settings for each pages. border, size, capacity*/
+img{
+	border:none
+}
+img:hover{
+	opacity:0.75
+}
+/*settings for image on gallery page*/
+.imgG{
+	margin: 30px
+}
+/*settings for image on introduction part of home page*/		
+.introImg{
+	float: left;
+	width: 300px;
+}		
+/*header part*/
+#header{
+
+	display:inline; 
+	float:left;
+	width:100%;
+	margin-top:20px	
+}
+.header{
+	background-color:#fff; 
+	display:inline; 
+	float:left;
+	padding:15px 30px 15px; 
+	width:100%;
+	background:#68a7ee
+}
+/*contain Logo and banner subparts */
+/* stttings for logo on each pages*/
+.logo_area{
+	display:inline; 
+	float:left; 
+	width:31%
+}
+.logo{
+	font-size:45px; 
+	font-weight:bold; 
+	color:#000; 
+	font-family:'Varela',sans-serif
+}
+.logo img{
+	max-width:100%
+}
+.logo img:hover{
+	opacity:1
+}
+.logo > span{
+	margin-left:-14px
+}
+.logo > span{
+	color:#d083cf
+}
+/*settings for banner on each pages*/
+.banner{
+	float:right; 
+	width:728px; 
+	height:90px
+}
+.banner img{
+	width:100%; 
+	height:100%
+}
+/*settings for navigation*/
+#navArea{
+	float:left; 
+	display:inline; 
+	width:100%; 
+	padding:0 30px;
+	background-color:#68a7ee
+}
+.navbar{
+border:medium none;
+	border-radius:0
+}
+.navbar-inverse .navbar-nav > li > a{
+	border-left:1px solid #383838;
+	color:#ddd;
+	font-family:'Oswald',sans-serif; 
+	display:inline-block;
+	height:50px; 
+	line-height:50px; 
+	padding:0 14px; 
+	text-shadow:0 1px 1px #000; 
+	text-transform:uppercase; 
+	-webkit-transition:all 0.5s; 
+	-mz-transition:all 0.5s; 
+	-ms-transition:all 0.5s; 
+	-o-transition:all 0.5s; 
+	transition:all 0.5s
+}
+.navbar-collapse{ 
+	padding-left:0
+}
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus{
+	background-color: firebrick
+}
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus{
+	background-color: firebrick
+}
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus{
+	background-color: firebrick
+}
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus{
+	background-color: firebrick
+}
+/*settings to hide menu in mobile or show in desktop mode*/
+.mobile-show{
+	display:none
+}
+.desktop-home{
+	display:block; 
+	font-size:30px; 
+	margin-top:10px
+}
+/*content part*/
+/*set proper size for video in introduction part of home page*/
+.video{
+	width: 580px;
+	height: 360px;
+        }
+/*set proper size of font in visit description part of visit place and dine page*/
+.vistitDescription {
+	font-size: 14px
+}
+/*set size for buttons on accommodation page*/
+.btnA{
+ width: 200px;
+}
+/*set height for this element on accommodation page*/
+#rasporka{
+	height: 600px;
+	}
+/*set red collor for error messages on gallery page*/
+#errorName{
+   color: brown;
+}
+#errorSurmame{
+	color: brown;
+}
+#errorEmail{
+	color: brown;
+}
+#errorAgriment{
+	color: brown;
+}
+/*footer part*/
+/*set proper size for footer element*/
+#footer{
+	display:inline; 
+	float:left; 
+	width:100%; 
+	margin-bottom:20px;
+}
+.footer{
+	float:left; 
+	display:inline;
+	width:100%; 
+	padding:10px 30px; 
+	background-color:#303030; 
+	color:#ccc;
+}
+/*set copyright settings*/
+.copyright{
+	float:left; 
+	width:50%; 
+	padding-top:5px; 
+	text-align:left
+}
+.copyright a{
+	color:#ccc
+}
+.copyright a:hover{
+	color:#d083cf
+}
+/*set settings for best developer*/
+.developer{
+	float:right;
+	width:50%; 
+	text-align:right;
+	padding-top:5px; 
+	color:#ccc
+}
+.developer a{
+	color:#ccc
+}
+.developer a:hover{
+	color:#d083cf
+}
+/*Media query for width size 1199px*(desktop mode)*/
+@media(max-width:1199px ){
+	/*Header part*/
+	/*settings for desktop view*/
+	.logo_area{
+		width:34%
+	}
+	.banner{
+		width:580px
+	}
+    /*content part*/
+	/*settings for desktop view*/
+	.introImg{
+	width: 300px;
+        }
+    .video{
+	width: 580px;
+	height: 360px;
+        }
+	.btnA{
+	width: 200px;
+    }
+	.imgG{
+	margin: 0px
+    }
+	}
+/*Media query for width size 991px*(for small desktop and tablet mode)*/
+@media(max-width:991px ){
+	/*Header part*/
+	/*settings for tablet view*/
+	.banner{
+		display:none
+	}
+	.logo_area{
+		width:100%
+	}
+	.nav > li > a{
+		padding:8px 8px
+	}
+	/*Content part*/
+	/*settings for tablet view*/
+	/*set auto size for lines(better for auto resizes(rubber markup))*/
+	hr{
+	width: auto
+	}
+	.btnA{
+	width: 200px;		
+    }
+    .divBtnA{
+    padding: 10px
+	}
+	.imgG{
+	margin: 0px
+    }
+}
+/*media query for very small desktop, tablets and some smartphones wiht high resolution*/
+@media(max-width:767px ){
+	/*header part*/
+	/*hide menu bar*/
+	.navbar-collapse{
+		padding-left:15px
+	}
+	.mobile-show{
+		display:block
+	}
+	.desktop-home{
+		display:none
+	}
+	.navbar-inverse .navbar-nav > li > a{
+		display:block
+	}
+	/*content part*/
+	.video{
+		width: 500px;
+		height: 290px; 
+	}
+	hr{
+		width:auto
+	}
+	.imgG{
+	margin: 0px
+    }
+}
+/*media query for smartphones*/
+@media(max-width:480px ){
+	body{
+	background:#68a7ee;
+	font-size: 14px;
+    }
+	/*content part*/
+	.video{
+		width: 300px;
+		height: 190px; 
+	}
+	.multimedia{
+		width: 300px;
+	}
+	.introduction{
+		width:300px;
+		margin: 0px	
+	}
+	.events{
+		width: 300px;
+		margin: 0px
+	}
+	hr{
+		width: auto
+	}
+	.btnA{
+	width: 200px;
+    }
+	.divBtnA{
+		padding: 10px
+	}
+	.imgG{
+	margin: 0px
+    }
+	.PlaceToVisit{
+    margin: 0px;	
+	}
+	/*footer part*/
+	/*resize copyright to horizontal style for mobile view*/
+	#footer{
+		padding: 20px
+	}
+	.copyright{
+		text-align:center;
+		width:100%
+	}
+	.developer{
+		text-align:center;
+		width:100%
+	}	
+	}

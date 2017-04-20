@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>QueenstownNZ-Accomodation</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="..//images/favicon/favicon-facebook_normal.png" />
+<link rel="stylesheet" type="text/css" href="..//assets/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="..//assets/css/style.css">
+<!--[if lt IE 9]>
+<script src="assets/js/html5shiv.min.js"></script>
+<script src="assets/js/respond.min.js"></script>
+<![endif]-->
+</head>
+<!-- load function wich will set footer into proper size -->
+<body onLoad="footer();">
+<div class="container">
+  <header id="header">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="header">
+          <div class="logo_area"><a href="..//index.html" class="logo"><img src="..//images/logo/QueenstownLogo.jpg" alt=""></a></div>
+          <div class="banner"><a href="..//index.html"><img src="..//images/logo/QueenstownBanner.jpeg"></a></div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section id="navArea">
+    <nav class="navbar navbar-inverse" role="navigation">
+       <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav main_nav">
+          <li><a href="..//index.html">Home<span class="mobile-show"></span></a></li>
+          <li><a href="placeToVisit.html">PLACE TO VISIT&#38;DINE</a></li>
+          <li class="active"><a href="accomodation.html">ACCOMODATION</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
+          <li><a href="newsletters.html">NEWSLETTER</a></li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+   <!-- accommodation section-->
+  <section class="accommodation text-center"> 
+  <!-- create divs with rows of 4 divs with buttons for each accommodation type. Each button has show and footuer function event -->
+   <div class="row">
+  <div class="divBtnA col-xs-12 col-sm-6 col-md-3">
+   <a class="btnA btn btn-danger btn-lg" href="#" onclick="showBackpackers(); footer()">Backpackers</a>&nbsp;
+  </div>
+  <div class="divBtnA col-xs-12 col-sm-6 col-md-3">
+   <a class="btnA btn btn-danger btn-lg" href="#" onclick="showBedAndBreakfast(); footer()">Bed &#38; Breakfast</a>&nbsp;  
+  </div>
+  <div class="divBtnA col-xs-12 col-sm-6 col-md-3">
+   <a class="btnA btn btn-danger btn-lg" href="#" onclick="showCottages(); footer()">Cottages</a>&nbsp;
+  </div>
+  <div class="divBtnA col-xs-12 col-sm-6 col-md-3">
+   <a class="btnA btn btn-danger btn-lg" href="#" onclick="showHotels(); footer()">Hotels</a>&nbsp;
+  </div>
+	  </div> 
+	  <!--each div with accommodation element has class with hidden or show paramentrs, which helps to function to show or hide theese parts -->
+   <div id="backpackers" class="hidden">
+    <hr>
+  	<h2 class="titleH2">Backpackers</h2>
+    <hr>
+     <div class="row">
+      <div class="col-lg-4 text-center">
+       <h3 class="accomTitle"><a href="http://www.bumblesbackpackers.co.nz/" target="new">Bumbles backpackers</a></h3>
+        <a href="http://www.bumblesbackpackers.co.nz/" target="new"><img width="300px" height="180px" src="../images/backpackers/bumble.jpg" alt="Bumble" class="img-rounded"></a>                           
+        <p class="accomDescription">If you are looking for a small, relaxed &#38; friendly place to stay in Queenstown with spectacular views and a waterfront location, this is it! Just a 2 minute stroll to downtown, we are a small laid back place where you'll meet some great people and get some sleep!<br>
+        <b>Call: +64 3 442 6098<br>
+        Location: Brunswick Street, Queenstown, Otago 9300<br>
+        Price: 25NZ$
+		</b>
+        <br>
+        <br>
+        <a href="http://www.bumblesbackpackers.co.nz/" target="new" class="btn btn-danger">Official Website</a>
+        </p>           
+        </div>
+     <div class="col-lg-4 text-center">
+		 <h3 class="accomTitle"><a href="http://nomadsworld.com/" target="new">Nomads Queenstown</a></h3>
+        <a href="http://nomadsworld.com/" target="new"><img width="300px" height="180px" src="..//images/backpackers/resize.php.jpeg" alt="Nomands" class="img-rounded" ></a>
+        <p class="accomDescription">Nomads Queenstown is located in the heart of Queenstown, New Zealands popular South Island holiday city. Designed with all budget travellers in mind our Queenstown hostel has a variety of room types from small and large dorms with ensuite to private ensuite rooms.<br>
+        <b>Call: +64 3 441 3922<br>
+        Location: 5 - 11 Church Street, Queenstown, Otago 9300<br>
+        Price: 29NZ$
+		</b> 
+        <br> 
+        <br>
+        <a href="http://nomadsworld.com/" target="new" class="btn btn-danger">Official Website</a>
+        </p>
+     </div>
+     <div class="col-lg-4 text-center">
+        <h3 class="accomTitle">Base Backpackers Queenstown</h3>
+        <img width="300px" height="180px" src="../images/backpackers/bp.jpeg" alt="base" class="img-rounded" >
+        <p class="accomDescription">We have everything you could want under one roof - your bed, your entertainment and your adventure all catered for by the friendliest team in town. Whether you're travelling alone or with a group, we pride ourselves in ensuring each individual feels right at home.<br>
+        <b>Call: +64 3 441 1185<br>
+        Location: 47-49 Shotover Street, Queenstown, Otago 9300<br>
+        Price: 24NZ$
+		</b> 
+        <br>
+        <br>
+        <a href="http://www.stayatbase.com" target="new" class="btn btn-danger">Official Website</a>
+		 </p>
+        </div>
+      </div>
+     <hr>
+    </div>
+    <div id="BedAndBreakfast" class="hidden">
+     <hr>
+  	 <h2 class="titleH2">Bed and Breakfast</h2>
+  	 <hr>
+     <div class="row">
+       <div class="col-lg-4 text-center">
+        <h3 class="accomTitle"> <a href="http://www.chaletqueenstown.co.nz/" target="new">Chalet Queenstown</a></h3>
+        <a href="http://www.chaletqueenstown.co.nz/" target="new"><img width="300px" height="180px" src="../images/bed/chalet.jpg" alt="Chalet" class="img-rounded" ></a>                           
+        <p class="place-description">Chalet Queenstown is a small boutique hotel located 5 minutes walk from the centre of Queenstown.  With its superb views of the Remarkables, Lake Wakatipu and Queenstown Hill, Chalet Queenstown is the perfect location for your New Zealand holiday, whether you are skiing, snowboarding, jet boating, walking, dining, exploring or just relaxing.
+        <br>
+        <b>Call: +64 3 442 7117<br>
+        Location:1 Dublin Street, Queenstown, Otago 9300<br>
+        Price: 225NZ$
+		</b> 
+        <br>
+        <br>
+        <a href="http://www.chaletqueenstown.co.nz/" target="new" class="btn btn-danger">Official Website</a>
+        </p>
+      </div>
+      <div class="col-lg-4 text-center">
+        <h3 class="accomTitle"><a href="http://www.larchhill.com/" target="new">Larch Hill, Bed and Breakfast</a></h3>
+        <a href="http://www.larchhill.com/" target="new"><img width="300px" height="180px" src="../images/bed/garden.jpg" alt="Larch" class="img-rounded" ></a>
+        <p class="accomDescription">As featured in ‘National Geographic Traveler’ magazines, Larch Hill Bed and Breakfast / Homestay is purpose built on an elevated site with SPECTACULAR VIEWS from all rooms and sundeck, overlooking Lake Wakatipu and the surrounding mountains. Situated in the Southern Lakes region of the South Island. 
+        This unique Queenstown B&#38;B provides a feeling of warmth and relaxation.
+        <br>
+        <b>Call: +64 3 442 4811<br>
+        Location: 16 Panners Way, Queenstown, Otago 9300<br>
+        Price: 185NZ$
+		</b>  
+        <br> 
+        <br>
+        <a href="http://www.larchhill.com/" target="new" class="btn btn-danger">Official Website</a>
+        </p>
+       </div>
+       <div class="col-lg-4 text-center">
+        <h3 class="accomTitle"><a href="http://queenstownhouse.co.nz" target="new">Queenstown House Boutique B&#38;B</a></h3>
+        <a href="http://queenstownhouse.co.nz" target="new"><img width="300px" height="180px" src="../images/bed/butique.jpg" alt="butique" class="img-rounded"></a>                           
+        <p class="place-description">Charming guest rooms with stylish decor and individual ambiance, all have spectacular lake or mountain views. Upmarket bedding and pillow choices, modern ensuite bathrooms include bathrobes and NZ toiletries.The spacious studio rooms have private outdoor patios.Bed &#38; Breakfast or self catering apartments can accommodate up to 28 guests.
+        <br>
+        <b>Call: +64 3 442 9043<br>
+        Location: 69 Hallenstein Street, Queenstown, Otago 9300<br>
+        Price: 250NZ$
+		</b>  
+        <br>
+		<br>
+		<a href="http://queenstownhouse.co.nz" target="new" class="btn btn-danger">Official Website</a>
+		</p>
+       </div>
+     </div>
+   <hr>  
+ </div>
+ <div id="cottages" class="hidden">
+ 			<hr>
+  			<h2 class="titleH2">Cottages</h2>
+  			<hr>
+			<div class="row">
+              <div class="col-lg-4 text-center">
+               <a href="https://www.kinrosscottages.co.nz/" target="new"><h3 class="accomTitle">Kinross cottage</h3></a>
+                <a href="https://www.kinrosscottages.co.nz/" target="new"><img width="300px" height="180px" src="../images/cottage/Kinross.jpg" alt="Kinross" class="img-rounded" ></a>                           
+                 <p class="accomDescription">Our self-contained cottage rooms are luxuriously homely &#38; designed with YOU in mind! We have 40 acres of green surrounds with mountains, vines &#38; ponds. For a relaxing escape near Queenstown, nothing matches the location, warmth &#38; style of Kinross...
+                 <br>
+                 <b>Call: 	+64 21 028 134 99<br>
+                 Location: 2300 Gibbston Highway (SH6), Queenstown, Otago 9371 <br>
+                 Price: 275NZ$
+		         </b>   
+                 <br>
+                 <br>
+                 <a href="https://www.kinrosscottages.co.nz/" target="new" class="btn btn-danger">Official Website</a> 
+                 </p>
+              </div>
+            <div class="col-lg-4 text-center">
+              <h3 class="accomTitle"><a href="http://www.stoneridge.co.nz/" target="new">Queenstown Stoneridge Estate</a></h3>
+               <a href="http://www.stoneridge.co.nz/" target="new"><img width="300px" height="180px" src="../images/cottage/stone.jpg" alt="stone" class="img-rounded" ></a>
+               <p class="accomDescription">Set tastefully apart, the Honeymoon Cottage at Stoneridge overlooks the vineyard with magnificent views of Lake Hayes and the alpine peaks beyond. Ornamental hand-forged iron and demolition timber add to the distinctive ambience, evoking imagery of Knights in shining armour.
+               <br>
+               <b>Call: +64 3 442 1021<br>
+                 Location: 756 State Highway 6, Lake Hayes, RD1, Queenstown 9371 <br>
+                 Price: 510NZ$
+		         </b>   
+                 <br> 
+                 <br>
+                 <a href="http://www.stoneridge.co.nz/" target="new" class="btn btn-danger">Official Website</a>
+                 </p>
+               </div>
+           
+            <div class="col-lg-4 text-center">
+              <h3 class="accomTitle"><a href="http://theorchardcottage.co.nz/" target="new">Orchard Cottage</a></h3>
+               <a href="http://theorchardcottage.co.nz/" target="new"><img width="300px" height="180px" src="../images/cottage/orchard.jpg" alt="stone" class="img-rounded" ></a>
+               <p class="accomDescription">Situated 5 minutes from Arrowtown and only 15 minutes from Queenstown airport, Orchard Cottage is a two bedroom self contained and well appointed cottage offering everything you need for a relaxing break or a base from which to enjoy the many activities the area has to offer.
+               <br>
+               <b>Call: +64 3 442 1158<br>
+                 Location: 556 Speargrass Flat RoadLake Hayes, R.D. 1, Queenstown 9371 <br>
+                 Price: 195NZ$
+		         </b>   
+                 <br> 
+                 <br>
+                 <a href="http://theorchardcottage.co.nz/" target="new" class="btn btn-danger">Official Website</a>
+                 </p>
+               </div>
+         </div>
+         <hr>
+       </div>
+	   <div id="hotels" class="hidden">
+          <hr>
+          <h2 class="titleH2">Hotels</h2>
+          <hr>
+		  <div class="row">
+            <div class="col-lg-4 text-center">
+             <h3 class="accomTitle"><a href="http://www.sofitel.com/" target="new">Sofitel Queenstown Hotel &#38; Spa</a></h3>
+             <a href="http://www.sofitel.com/" target="new"><img width="300px" height="180px" src="../images/hotels/sofitel.jpg" alt="sofitel" class="img-rounded" ></a>                           
+             <p class="accomDescription">Experience a new level of sophistication at Sofitel Queenstown Hotel and Spa. Inspired by the charms of Paris with the warm hospitality inherent to Queenstown, be mesmerized by its tasteful combination of French antique elegance and local avant-garde design. Centrally located in the heart of Queenstown
+             <br>
+             <b>Call: +64 3 450 0045<br>
+             Location: 8 Duke St | PO Box 1797, Queenstown 9297 <br>
+             Price: 234NZ$
+		     </b>  
+             <br>
+             <br>
+             <a href="http://www.sofitel.com/" target="new" class="btn btn-danger">Official Website</a> 
+             </p>
+          </div>
+           <div class="col-lg-4 text-center">
+             <h3 class="accomTitle"><a href="http://thedairy.co.nz/" target="new">The Dairy Private Hotel</a></h3>
+             <a href="http://thedairy.co.nz/" target="new"><img width="300px" height="180px" src="../images/hotels/diary.jpg" alt="diary" class="img-rounded" ></a>                           
+             <p class="accomDescription">The Dairy Private Hotel, Queenstown is your perfect escape. Our boutique hotel is in the centre of Queenstown and yet private and quiet. The property is renowned for its excellent service from the minute that you walk through the door. We are able to assist with everything during your happily and enjoyable stay.
+             <br>
+             <b>Call: +64 3 4425164<br>
+             Location: 10 Isle Street, Queenstown 9300 <br>
+             Price: 330NZ$
+		     </b>  
+             <br>
+             <br>
+             <a href="http://thedairy.co.nz/" target="new" class="btn btn-danger">Official Website</a> 
+             </p>
+          </div>
+          <div class="col-lg-4 text-center">
+             <h3 class="accomTitle"><a href="http://brownshotel.co.nz/" target="new">Browns Boutique Hotel</a></h3>
+             <a href="http://brownshotel.co.nz/" target="new"><img width="300px" height="180px" src="../images/hotels/brown.jpg" alt="brown" class="img-rounded" ></a>                           
+             <p class="accomDescription">This stylishly comfortable European inspired Bed &#38; Breakfast is perfect Queenstown accommodation for your next vacation or ski holiday combining the intimate, timeless feel with genuine New Zealand hospitality. Free Wifi, Cooked/Continental breakfast, Sweeping Remarkables mountain views, free off-road tours
+             <br>
+             <b>Call: +64 3 441 2050<br>
+             Location: 26 Isle St, Queenstown, otago 9300 <br>
+             Price: 385NZ$
+		     </b> 
+             <br>
+             <br>
+             <a href="http://brownshotel.co.nz/" target="new" class="btn btn-danger">Official Website</a> 
+             </p>
+          </div>
+		</div>
+		<hr>
+	 </div>       
+    </section>
+    <div id="rasporka" class="show" >
+  	 <hr>
+  </div>
+  <hr id="hrA">  
+  <footer id="footer">
+    <div class="footer ">
+      <p class="copyright">Copyright &copy; 2017 <a href="https://www.queenstownnz.co.nz/" target="new">Queenstown</a></p>
+      <p class="developer">Developed By <a href="http://avborik.esy.es/" target="new">Boris Avdeev</a></p>
+    </div>
+  </footer>
+</div>
+<!-- link custom JavaScript file and get function from it. -->
+<script src="..//assets/js/jquery.min.js"></script> 
+<script src="..//assets/js/bootstrap.min.js"></script>
+<script src="..//assets/js/custom.js"></script> 
+
+</body>
+</html>
